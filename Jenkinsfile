@@ -9,19 +9,8 @@ date'''
     }
 
     stage('Test') {
-      parallel {
-        stage('Test') {
-          steps {
-            echo 'TestStep'
-          }
-        }
-
-        stage('TestPair') {
-          steps {
-            echo 'Test Pair'
-          }
-        }
-
+      steps {
+        echo 'TestStep'
       }
     }
 
